@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37628.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaixaAlunoAprovacoesApp", "CaixaAlunoAprovacoesApp\CaixaAlunoAprovacoesApp.csproj", "{F849B4A7-8367-4D81-B3E1-1F6467450CCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaixaAlunoAprovacoesApp.Tests", "CaixaAlunoAprovacoesApp.Tests\CaixaAlunoAprovacoesApp.Tests.csproj", "{2047484F-EF82-4149-B880-1CD8A65C3019}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F849B4A7-8367-4D81-B3E1-1F6467450CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F849B4A7-8367-4D81-B3E1-1F6467450CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F849B4A7-8367-4D81-B3E1-1F6467450CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F849B4A7-8367-4D81-B3E1-1F6467450CCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2047484F-EF82-4149-B880-1CD8A65C3019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2047484F-EF82-4149-B880-1CD8A65C3019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2047484F-EF82-4149-B880-1CD8A65C3019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2047484F-EF82-4149-B880-1CD8A65C3019}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8662789-1B85-4AB8-BA3D-39A6E7C69030}
+	EndGlobalSection
+EndGlobal
