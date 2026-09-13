@@ -1,5 +1,10 @@
 ﻿namespace CaixaAlunoAprovacoesApp.Calculadoras
 {
+    static partial class CalculadoraType
+    {
+        public const string Harmonica = "Harmonica";
+    }
+
     public class CalculadoraMediaHarmonica : ICalculadoraMedia
     {
         // A média harmônica é calculada dividindo a quantidade de valores

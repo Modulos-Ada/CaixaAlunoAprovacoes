@@ -1,5 +1,10 @@
 ﻿namespace CaixaAlunoAprovacoesApp.Calculadoras
 {
+    static partial class CalculadoraType
+    {
+        public const string Ponderada = "Ponderada";
+    }
+
     public class CalculadoraMediaPonderada : ICalculadoraMedia
     {
         public decimal Calcular(decimal[] notas)
