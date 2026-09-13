@@ -1,4 +1,5 @@
 ﻿using CaixaAlunoAprovacoesApp.Calculadoras;
+using CaixaAlunoAprovacoesApp.Readers.ApiReader;
 using CaixaAlunoAprovacoesApp.Services;
 using System.Reflection;
 
@@ -8,26 +9,16 @@ namespace CaixaAlunoAprovacoesApp
     {
         static void Main(string[] args)
         {
-
-            var types = Assembly.GetExecutingAssembly().GetTypes()
-                .Where(x => x.IsAssignableTo(typeof(ICalculadoraMedia)) &&
-                            x.GetCustomAttribute<CalculadoraNameAttribute>() != null &&
-                            !x.IsAbstract &&
-                            !x.IsInterface);
-
-
-            return;
-
             if (args.Length < 2)
             {
                 Console.WriteLine("Uso: <calculadora> <reader>");
                 Console.WriteLine(" Calculadoras:");
-                Console.WriteLine($"    {CalculadoraType.Aritmetica}");
-                Console.WriteLine($"    {CalculadoraType.Ponderada}");
-                Console.WriteLine($"    {CalculadoraType.Harmonica}");
+                Console.WriteLine($"    {nameof(CalculadoraMediaAritmetica)}");
+                Console.WriteLine($"    {nameof(CalculadoraMediaPonderada)}");
+                Console.WriteLine($"    {nameof(CalculadoraMediaHarmonica)}");
                 Console.WriteLine();
                 Console.WriteLine(" Readers:");
-                Console.WriteLine("     API");
+                Console.WriteLine($"     {nameof(ApiAlunoReader)}");
 
                 return;
             }

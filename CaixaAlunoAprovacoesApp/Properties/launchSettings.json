@@ -2,7 +2,7 @@
   "profiles": {
     "CaixaAlunoAprovacoesApp": {
       "commandName": "Project",
-      "commandLineArgs": "aritmetica api"
+      "commandLineArgs": "CalculadoraMediaAritmetica ApiAlunoReader"
     }
   }
 }
