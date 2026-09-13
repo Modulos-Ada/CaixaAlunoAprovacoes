@@ -1,7 +1,6 @@
 ﻿using CaixaAlunoAprovacoesApp.Calculadoras;
 using CaixaAlunoAprovacoesApp.Readers.ApiReader;
 using CaixaAlunoAprovacoesApp.Services;
-using System.Reflection;
 
 namespace CaixaAlunoAprovacoesApp
 {
@@ -26,15 +25,20 @@ namespace CaixaAlunoAprovacoesApp
             var tipoCalculadora = args[0].ToLower();
             var tipoReader = args[1].ToLower();
 
-            var calculadora = CalculadoraFactory.Create(tipoCalculadora);
-            var reader = AlunoReaderFactory.Create(tipoReader);
+            var pesos = Environment.GetEnvironmentVariable("Pesos") ?? "1,1,1,3";
+            var options = new CalculadoraPonderadaOptions(pesos);
 
+            var calculadora = CalculadoraFactory.Create(tipoCalculadora, options);
+
+
+
+            var reader = AlunoReaderFactory.Create(tipoReader);
             var service = new AprovacaoService(calculadora, reader);
 
-            //foreach (var aluno in service.GetAprovados())
-            //{
-            //    Console.WriteLine($"{aluno.RA} - {aluno.Nome} - {string.Join(",", aluno.Notas)}");
-            //}
+            foreach (var aluno in service.GetAprovados())
+            {
+                Console.WriteLine($"{aluno.RA} - {aluno.Nome} - {string.Join(",", aluno.Notas)}");
+            }
         }
     }
 }

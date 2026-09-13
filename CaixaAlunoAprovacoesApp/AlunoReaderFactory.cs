@@ -7,7 +7,7 @@ namespace CaixaAlunoAprovacoesApp
     {
         public static IAlunoReader? Create(string tipo)
         {
-            if (tipo.Equals("api", StringComparison.OrdinalIgnoreCase))
+            if (tipo.Equals(nameof(ApiAlunoReader), StringComparison.OrdinalIgnoreCase))
                 return new ApiAlunoReader();
 
             return null;
