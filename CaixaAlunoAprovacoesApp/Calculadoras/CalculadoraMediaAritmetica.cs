@@ -1,4 +1,5 @@
-﻿namespace CaixaAlunoAprovacoesApp.Calculadoras
+﻿
+namespace CaixaAlunoAprovacoesApp.Calculadoras
 {
     static partial class CalculadoraType
     {
@@ -6,8 +7,13 @@
     }
 
 
+    [CalculadoraName(CalculadoraType.Aritmetica)]
     public class CalculadoraMediaAritmetica : ICalculadoraMedia
     {
+        partial class CalculadoraType
+        {
+            public const string Aritmetica = "Aritmetica";
+        }
         public decimal Calcular(decimal[] notas)
             => notas.Average();
     }

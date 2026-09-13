@@ -5,6 +5,7 @@
         public const string Ponderada = "Ponderada";
     }
 
+    [CalculadoraName(CalculadoraType.Ponderada)]
     public class CalculadoraMediaPonderada : ICalculadoraMedia
     {
         public decimal Calcular(decimal[] notas)
