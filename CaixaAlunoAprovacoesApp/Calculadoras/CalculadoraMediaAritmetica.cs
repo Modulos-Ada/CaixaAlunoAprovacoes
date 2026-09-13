@@ -1,6 +1,6 @@
 ﻿namespace CaixaAlunoAprovacoesApp.Calculadoras
 {
-    public class CalculadorMediaAritmetica : ICalculadoraMedia
+    public class CalculadoraMediaAritmetica : ICalculadoraMedia
     {
         public decimal Calcular(decimal[] notas)
             => notas.Average();

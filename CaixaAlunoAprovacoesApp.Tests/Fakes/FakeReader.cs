@@ -1,7 +1,7 @@
 ﻿using CaixaAlunoAprovacoesApp.DTO;
 using CaixaAlunoAprovacoesApp.Readers;
 
-namespace CaixaAlunoAprovacoesApp.Tests
+namespace CaixaAlunoAprovacoesApp.Tests.Fakes
 {
     class FakeReader : IAlunoReader
     {

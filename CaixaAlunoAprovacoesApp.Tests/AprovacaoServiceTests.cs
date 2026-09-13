@@ -1,6 +1,7 @@
 ﻿using CaixaAlunoAprovacoesApp.Services;
+using CaixaAlunoAprovacoesApp.Tests.Fakes;
 
-namespace CaixaAlunoAprovacoesApp.Tests.Fakes
+namespace CaixaAlunoAprovacoesApp.Tests
 {
     public class AprovacaoServiceTests : TestsBase
     {

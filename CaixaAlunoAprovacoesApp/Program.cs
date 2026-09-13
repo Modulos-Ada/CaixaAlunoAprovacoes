@@ -11,7 +11,7 @@ namespace CaixaAlunoAprovacoesApp
         {
             var dbReader = new DatabaseAlunoReader();
             var csvReader = new CsvAlunoReader();
-            var calculadora = new CalculadorMediaAritmetica();
+            var calculadora = new CalculadoraMediaAritmetica();
 
             var service = new AprovacaoService(calculadora, dbReader, csvReader);
 
