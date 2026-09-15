@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CaixaAlunoAprovacoesApp": {
+      "commandName": "Project",
+      "commandLineArgs": "CalculadoraMediaHarmonica DatabaseAlunoReader"
+    }
+  }
+}

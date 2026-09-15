@@ -17,8 +17,8 @@ namespace CaixaAlunoAprovacoesApp.Readers
         public IEnumerable<Aluno> ReadAll()
         {
             var sql = "SELECT RA, Nome, Nota1, Nota2, Nota3, Nota4 FROM Alunos";
-            var command = new NpgsqlCommand(sql, connection);
-            var reader = command.ExecuteReader();
+            using var command = new NpgsqlCommand(sql, connection);
+            using var reader = command.ExecuteReader();
 
             while (reader.Read())
             {
